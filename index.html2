@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marcela's Brunch</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg, #fff5f7, #ffece5, #fff9f1);
+      background-size: 400% 400%;
+      animation: gradientShift 15s ease infinite;
+      color: #4b2e2e;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      text-align: center;
+      padding: 3em 1em;
+      background: rgba(255, 245, 248, 0.85);
+      border-bottom: 3px dotted #fab1a0;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3.2em;
+      margin: 0;
+      color: #e17055;
+    }
+
+    p.subtitle {
+      font-size: 1.3em;
+      font-weight: 600;
+      margin-top: 0.5em;
+      color: #d63031;
+    }
+
+    section {
+      background: rgba(255, 255, 255, 0.95);
+      margin: 2em auto;
+      padding: 2em;
+      max-width: 800px;
+      border-radius: 18px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+    }
+
+    h2 {
+      font-size: 1.7em;
+      color: #d63031;
+      border-bottom: 2px dashed #fab1a0;
+      padding-bottom: 0.3em;
+      margin-bottom: 1.2em;
+    }
+
+    .menu-item {
+      background: #fffaf9;
+      border: 1px solid #fce4ec;
+      padding: 1em;
+      border-radius: 10px;
+      margin-bottom: 1em;
+    }
+
+    .menu-item h3 {
+      margin: 0;
+      font-size: 1.15em;
+      color: #8e4444;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Marcela's Brunch</h1>
+  <p class="subtitle">Mother's Day 2025</p>
+</header>
+
+<section>
+  <h2>Menu</h2>
+  <div class="menu-item"><h3>Seven Grain Salad</h3></div>
+  <div class="menu-item"><h3>Asparagus</h3></div>
+  <div class="menu-item"><h3>Roasted Potatoes</h3></div>
+  <div class="menu-item"><h3>Cheese and Charcuterie Board</h3></div>
+  <div class="menu-item"><h3>Deviled Eggs</h3></div>
+  <div class="menu-item"><h3>Chicken Caprese Sandwich</h3></div>
+  <div class="menu-item"><h3>Vegetarian Caprese Sandwich</h3></div>
+  <div class="menu-item"><h3>Cake</h3></div>
+  <div class="menu-item"><h3>Pancakes</h3></div>
+  <div class="menu-item"><h3>Ice Cream</h3></div>
+</section>
+
+<section>
+  <h2>Drinks</h2>
+  <div class="menu-item"><h3>Mango Passionfruit Mimosa</h3></div>
+  <div class="menu-item"><h3>Pineapple Mimosa</h3></div>
+  <div class="menu-item"><h3>Coffee</h3></div>
+</section>
+
+</body>
+</html>
