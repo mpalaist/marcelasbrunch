@@ -2,57 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Marcela's Brunch</title>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Quicksand', sans-serif;
-      background: url('https://images.unsplash.com/photo-1559561854-7196a5b2f6a6?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
-      background-size: cover;
       margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg, #fcb0b3, #fecd95, #f89c9d);
+      background-size: 600% 600%;
+      animation: gradientShift 15s ease infinite;
       color: #5c3d3d;
     }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
     header {
-      background: rgba(251, 177, 189, 0.85);
-      color: white;
-      padding: 3em 1em;
       text-align: center;
+      padding: 3em 1em;
+      background: rgba(255, 255, 255, 0.7);
+      border-bottom: 4px dotted #f77f00;
     }
+
     h1 {
-      margin: 0;
       font-family: 'Pacifico', cursive;
-      font-size: 3.2em;
+      font-size: 3.5em;
+      margin: 0;
+      color: #d62828;
     }
-    p {
-      font-size: 1.2em;
-      margin-top: 0.4em;
+
+    p.subtitle {
+      font-size: 1.4em;
       font-weight: 600;
+      margin-top: 0.5em;
+      color: #e85d75;
     }
+
     section {
+      background: rgba(255, 255, 255, 0.9);
+      margin: 2em auto;
       padding: 2em;
       max-width: 800px;
-      margin: auto;
-      background-color: rgba(255, 245, 248, 0.9);
-      border-radius: 16px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-      margin-bottom: 2em;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     }
+
     h2 {
-      font-size: 1.7em;
-      color: #d36c6c;
-      border-bottom: 2px dashed #fcb1a2;
+      font-size: 1.8em;
+      color: #f94144;
+      border-bottom: 2px dashed #f3722c;
       padding-bottom: 0.3em;
-      margin-bottom: 1.2em;
+      margin-bottom: 1em;
     }
+
     .menu-item {
-      background-color: #fff0f4;
+      background: #fff0f4;
       border: 1px solid #fcd3d8;
       padding: 1em;
       border-radius: 12px;
       margin-bottom: 1em;
-      box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.05);
     }
+
     .menu-item h3 {
       margin: 0;
       font-size: 1.15em;
@@ -64,12 +78,11 @@
 
 <header>
   <h1>Marcela's Brunch</h1>
-  <p>Mother's Day 2025</p>
+  <p class="subtitle">Mother's Day 2025</p>
 </header>
 
 <section>
   <h2>Menu</h2>
-
   <div class="menu-item"><h3>Seven Grain Salad</h3></div>
   <div class="menu-item"><h3>Asparagus</h3></div>
   <div class="menu-item"><h3>Roasted Potatoes</h3></div>
@@ -84,7 +97,6 @@
 
 <section>
   <h2>Drinks</h2>
-
   <div class="menu-item"><h3>Mango Passionfruit Mimosa</h3></div>
   <div class="menu-item"><h3>Pineapple Mimosa</h3></div>
   <div class="menu-item"><h3>Coffee</h3></div>
