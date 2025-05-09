@@ -10,20 +10,26 @@
       font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #fff5f8;
+      background-color: #fff6f7;
       color: #333;
     }
 
     header {
-      background-color: #ff6b6b;
+      background-color: #ff6b81;
       color: white;
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 2rem 1rem 1rem;
     }
 
     header h1 {
       margin: 0;
       font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.25rem;
+      font-weight: 400;
     }
 
     main {
@@ -37,28 +43,43 @@
       border-radius: 12px;
       padding: 1.5rem;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 1.5rem;
     }
 
     h2 {
-      color: #ff6b6b;
+      color: #ff6b81;
       font-size: 1.75rem;
       margin-bottom: 1rem;
     }
 
+    h3 {
+      margin-top: 1.5rem;
+      font-size: 1.4rem;
+      color: #444;
+    }
+
     ul {
-      list-style-type: none;
+      list-style: none;
       padding: 0;
     }
 
     li {
       padding: 0.5rem 0;
-      font-size: 1.1rem;
       border-bottom: 1px solid #eee;
+      font-size: 1.1rem;
+    }
+
+    li:last-child {
+      border-bottom: none;
     }
 
     @media (max-width: 600px) {
       header h1 {
         font-size: 2rem;
+      }
+
+      header p {
+        font-size: 1rem;
       }
 
       h2 {
@@ -70,17 +91,35 @@
 <body>
   <header>
     <h1>Marcela’s Brunch</h1>
+    <p>Mother’s Day 2025</p>
   </header>
   <main>
     <section aria-labelledby="menu-heading">
       <h2 id="menu-heading">Menu</h2>
+
+      <h3>Savoury</h3>
       <ul>
-        <li>Avocado Toast with Poached Egg</li>
-        <li>Chicken Croissant Sandwich</li>
-        <li>Berry Yogurt Parfait</li>
-        <li>Mini Pancake Stack</li>
-        <li>Peach Bellini</li>
-        <li>Fresh Orange Juice</li>
+        <li>Cheese and charcuterie board</li>
+        <li>Asparagus</li>
+        <li>Seven grain salad</li>
+        <li>Devilled eggs</li>
+        <li>Chicken caprese croissant</li>
+        <li>Vegetarian caprese croissant</li>
+        <li>Roasted potatoes</li>
+      </ul>
+
+      <h3>Sweet</h3>
+      <ul>
+        <li>Cake</li>
+        <li>Ice cream</li>
+        <li>Waffles</li>
+      </ul>
+
+      <h3>Drinks</h3>
+      <ul>
+        <li>Coffee</li>
+        <li>Mango passionfruit mimosa</li>
+        <li>Pineapple mimosa</li>
       </ul>
     </section>
   </main>
